@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de setup</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!---cabeçalho-->
+    <header class="cabecalho">
+        <h1>controle de setup</h1>
+        <p>Paínel de acompanhamento de atividades</p>
+    </header>
+
+    <main class="container">
+        <section class="painel-cadastro">
+
+            <h2>nova atividade</h2>
+
+            <form id="form-atividade">
+
+                <div class="campo">
+                    <label for="codigo">Código do setup</label>
+                    <input 
+                        type="text"
+                        id="codigo"
+                        placeholder="Código do Setup"
+                        required
+                    >
+                </div>
+                
+                <div class="campo">
+                    <label for="responsavel">Responsável</label>
+                    <input 
+                    type="text"
+                    id="responsavel"
+                    placeholder="Nome"
+                    required
+                    >
+                </div>
+
+                <button type="submit" class="botao-adicionar">
+                    adicionar atividade
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="painel-atividade">
+
+            <h2>Painel de atividade</h2>
+
+            <div class="grupo-atividades">
+                <h3>
+                    <span class="bolinha verde"></span>
+                    Fazendo agora
+                </h3>
+
+                <div id="lista-andamento">
+                    <!--será adicionado com js-->
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <script src="interacao.js"></script>
+</body>
+</html>
