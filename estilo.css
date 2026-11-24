@@ -1,0 +1,212 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* defini a fonte dos caracteres */
+    background-color: #f3f6f4; /* cor de fundo */
+    color: #26352c;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background-color: #245c3a; /* cor de fundo */
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.cabecalho h1 {
+    margin: 0 0 8px;
+}
+
+.cabecalho p {
+    margin: 0;
+    color: #dcebe0;
+}
+
+/* CONTAINER PRINCIPAL */
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+/* PAINÉIS */
+
+.painel-cadastro,
+.painel-atividades {
+    background-color: white; /*cor de fundo*/
+    padding: 22px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    margin-top: 0;
+    color: #245c3a;
+}
+
+/* CAMPOS DO FORMULÁRIO */
+
+.campo {
+    margin-bottom: 16px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5ce;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, sans-serif; /*defini a fonte dos caracteres*/
+}
+
+.campo textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* BOTÃO */
+
+.botao-adicionar {
+    background-color: #287a49; /* cor de fundo*/
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 13px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.botao-adicionar:hover {
+    background-color: #1d6038; /*cor de fundo*/
+}
+
+/* GRUPOS DE ATIVIDADES */
+
+.grupo-atividades {
+    margin-top: 25px;
+}
+
+.grupo-atividades h3 {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+/* BOLINHAS DE STATUS */
+
+.bolinha {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.verde {
+    background-color: #24a148; /* cor de fundo */
+}
+
+.amarela {
+    background-color: #d69e22; /* cor de fundo */
+}
+
+.cinza {
+    background-color: #929b95; /* cor de fundo */
+}
+
+/* CARTÕES DE ATIVIDADES */
+
+.cartao-atividade {
+    border: 1px solid #dce4de;
+    border-left: 4px solid #24a148;
+    border-radius: 7px;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #ffffff; /* cor de fundo */
+}
+
+.cartao-atividade.pausada {
+    border-left-color: #d69e22;
+}
+
+.cartao-atividade.concluida {
+    border-left-color: #929b95;
+}
+
+.cartao-atividade p {
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.informacoes {
+    color: #68766d;
+    font-size: 13px;
+}
+
+.controle-status {
+    width: 100%;
+    max-width: 230px;
+    padding: 9px;
+    margin-top: 8px;
+    border: 1px solid #cbd5ce;
+    border-radius: 5px;
+    background-color: white; /* cor de fundo */
+    font-size: 14px;
+}
+
+/* MENSAGEM DE LISTA VAZIA */
+
+.lista-vazia {
+    color: #7b887f;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    .cabecalho {
+        padding: 22px 12px;
+    }
+
+    .cabecalho h1 {
+        font-size: 23px;
+    }
+
+    .container {
+        padding: 0 12px;
+        margin-top: 15px;
+    }
+
+    .painel-cadastro,
+    .painel-atividades {
+        padding: 16px;
+    }
+
+    .botao-adicionar {
+        width: 100%;
+    }
+
+    .controle-status {
+        max-width: 100%;
+    }
+}
